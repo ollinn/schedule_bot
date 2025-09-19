@@ -41,7 +41,8 @@ else:  # admin
     new_user = User(
         login=login,
         password_hash=bcrypt.hash(password),
-        role=role
+        role='admin',
+        name_tuter='Admin',  # нужно заполнить, иначе NOT NULL ошибка
     )
 
 # --- Сохраняем в БД ---
